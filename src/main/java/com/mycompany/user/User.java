@@ -25,6 +25,8 @@ public class User {
         return id;
     }
 
+    private boolean enabled;
+
     public void setId(Integer id) {
         this.id = id;
     }
@@ -70,5 +72,13 @@ public class User {
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 '}';
+    }
+
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
     }
 }
